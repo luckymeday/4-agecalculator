@@ -13,12 +13,14 @@ function age() {
   var d1 = document.getElementById("dayInput").value;
   var m1 = document.getElementById("monthInput").value;
   var y1 = document.getElementById("yearInput").value;
-
-  var date = new Date();
+  // console.log("input " + d1, m1, y1);
+  var date = new Date(); //pulling today date
+  // console.log("pulling today " + date);
 
   var d2 = date.getDate();
   var m2 = 1 + date.getMonth();
   var y2 = date.getFullYear();
+  // console.log("today " + d2, m2, y2);
 
   var month = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
