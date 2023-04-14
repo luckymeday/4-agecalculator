@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | Age calculator app</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="container">
@@ -19,6 +25,9 @@
             maxlength="2"
             required
           />
+          <div>
+            <p class="alert" id="alertDay"></p>
+          </div>
         </div>
         <div class="block">
           <p class="title">Month</p>
@@ -30,6 +39,9 @@
             maxlength="2"
             required
           />
+          <div>
+            <p class="alert" id="alertMonth"></p>
+          </div>
         </div>
         <div class="block">
           <p class="title">Year</p>
@@ -41,22 +53,43 @@
             maxlength="4"
             required
           />
-        </div>
-        <div class="arrow-part">
-          <input type="button" onclick="age()" />
-          <!-- <img src="./images/icon-arrow.svg" /> -->
+          <div>
+            <p class="alert" id="alertYear"></p>
+          </div>
         </div>
       </div>
+      <div class="arrow-part">
+        <input type="button" class="arrow-button" onclick="age()" />
+        <!-- <input
+            type="button"
+            img
+            src="./images/icon-arrow.svg"
+            width="50px"
+            type="reset"
+            onclick="age()"
+          /> -->
+        <!-- <button class="arrow-button" onclick="age()"></button> -->
+      </div>
+
       <div class="answer-container">
-        <div class="age" id="age">age</div>
+        <div
+          class="answer-age"
+          id="age"
+          style="font-size: 32px"
+          font-style="italic"
+        >
+          -- years<br />
+          -- months<br />
+          -- days <br />
+        </div>
       </div>
     </div>
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
     <script src="script.js"></script>
   </body>
 </html>
