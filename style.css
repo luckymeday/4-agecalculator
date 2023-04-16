@@ -66,3 +66,6 @@ body {
   margin-left: 30px;
   margin-right: 30px;
 }
+.purple {
+  color: hsl(259, 100%, 65%);
+}
